@@ -20,12 +20,8 @@ module.exports = {
                 'https://main-openchat-fpem123.endpoint.ainize.ai/send/S2lt',
                 formData,
                 {headers: formData.getHeaders()}
-                // {
-                //     "Content-Type": "multipart/form-data"
-                // }
               )
               .then(function (response) {
-                console.log(response);
                 return interaction.reply(response.data.output);
               })
               .catch(function (error) {
