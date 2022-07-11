@@ -15,7 +15,7 @@ module.exports = {
             formData.append('bot_id', "Mr.Bot")
             formData.append('text', value)
             formData.append('topic', "weekend")
-            formData.append('agent', "DIALOGPT.MEDIUM")
+            formData.append('agent', "blender.medium")
             await axios.post(
                 'https://main-openchat-fpem123.endpoint.ainize.ai/send/S2lt',
                 formData,
